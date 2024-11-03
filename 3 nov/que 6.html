@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Selector</title>
+</head>
+<body>
+    <select id="animalSelect" onchange="updateImage()">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="elephant">Elephant</option>
+        <option value="lion">Lion</option>
+    </select>
+
+    <img id="animalImage" src="dog.jpg" alt="Animal" width="300" />
+
+    <script>
+        function updateImage() {
+            const select = document.getElementById("animalSelect");
+            const img = document.getElementById("animalImage");
+
+            // Get the selected value
+            const selectedAnimal = select.value;
+
+            // Update the image source based on the selected animal
+            img.src = ${selectedAnimal}.jpg;
+        }
+    </script>
+</body>
+</html> Question 6js
